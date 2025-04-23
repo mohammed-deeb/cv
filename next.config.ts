@@ -2,25 +2,17 @@
  * @type {import('next').NextConfig}
  */
 
-// const isProduction = process.env.NODE_ENV === 'production';
+const isProduction = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
   output: 'export',
-  basePath: '/cv',
-  assetPrefix: '/cv/',
+  basePath: isProduction ? 'cv' : '',
+  assetPrefix: isProduction ? 'cv/' : '',
+  trailingSlash: true,
   distDir: 'out',
   images: {
     unoptimized: true,
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'mohammed-deeb.github.io',
-        port: '',
-        pathname: '/**',
-      },
-    ],
   },
-  trailingSlash: true,
 };
  
 module.exports = nextConfig
