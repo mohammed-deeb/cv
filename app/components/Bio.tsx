@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import BasePath from "./basePath";
 
 const Bio = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -28,7 +29,7 @@ const Bio = () => {
                   transition={{ duration: 0.3 }}
                 >
                   <Image
-                    src="/me_phd_squared_sm.png"
+                    src={BasePath + "/me_phd_squared_sm.png"}
                     alt="Profile Photo"
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-110"
@@ -203,7 +204,7 @@ const Bio = () => {
             </button>
             <div className="relative aspect-square w-full rounded-lg overflow-hidden">
               <Image
-                src="/me_phd_squared_sm.png"
+                src={BasePath + "/me_phd_squared_sm.png"}
                 alt="Profile Photo - Enlarged"
                 fill
                 className="object-cover"
