@@ -2,12 +2,12 @@
  * @type {import('next').NextConfig}
  */
 
-const isProduction = process.env.NODE_ENV === 'production';
+// const isProduction = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
   output: 'export',
-  basePath: isProduction ? '/cv' : '',
-  assetPrefix: isProduction ? '/cv' : '',
+  basePath: '/cv',
+  assetPrefix: '/cv',
   distDir: 'out',
   images: {
     unoptimized: true,
