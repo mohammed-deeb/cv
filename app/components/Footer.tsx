@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-
+import BasePath from "@/app/components/basePath";
 const Footer = () => {
   return (
     <footer className="w-full max-w-5xl px-4 py-3 mx-auto bg-gradient-to-r from-blue-800 via-purple-800 to-indigo-900 text-white">
@@ -55,7 +55,7 @@ const Footer = () => {
                   <ul className="space-y-2">
                     <li>
                       <Link 
-                        href="#bio" 
+                        href={BasePath + "/#bio"} 
                         className="hover:text-blue-200 transition-colors"
                         onClick={(e) => {
                           e.preventDefault();
@@ -67,7 +67,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <Link 
-                        href="#projects" 
+                        href={BasePath + "/#projects"} 
                         className="hover:text-blue-200 transition-colors"
                         onClick={(e) => {
                           e.preventDefault();
@@ -79,7 +79,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <Link 
-                        href="#experience" 
+                        href={BasePath + "/#experience"} 
                         className="hover:text-blue-200 transition-colors"
                         onClick={(e) => {
                           e.preventDefault();
