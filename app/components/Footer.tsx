@@ -58,7 +58,6 @@ const Footer = () => {
                         href={BasePath + "/#bio"} 
                         className="hover:text-blue-200 transition-colors"
                         onClick={(e) => {
-                          e.preventDefault();
                           document.getElementById('bio')?.scrollIntoView({ behavior: 'smooth' });
                         }}
                       >
@@ -70,7 +69,6 @@ const Footer = () => {
                         href={BasePath + "/#projects"} 
                         className="hover:text-blue-200 transition-colors"
                         onClick={(e) => {
-                          e.preventDefault();
                           document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
                         }}
                       >
@@ -82,7 +80,6 @@ const Footer = () => {
                         href={BasePath + "/#experience"} 
                         className="hover:text-blue-200 transition-colors"
                         onClick={(e) => {
-                          e.preventDefault();
                           document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' });
                         }}
                       >
