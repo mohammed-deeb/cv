@@ -3,7 +3,7 @@
  */
 
 const nextConfig = {
-  basePath: '/cv',
+  basePath: 'https://mohammed-deeb.github.io/cv/',
   output: 'export',
   distDir: 'out',
   images: {
