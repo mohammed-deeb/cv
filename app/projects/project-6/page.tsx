@@ -6,18 +6,19 @@ import Navbar from "@/app/components/navbar";
 import Footer from "@/app/components/Footer";
 import ImageModal from "@/app/components/ImageModal";
 import { useState } from "react";
+import BasePath from "@/app/components/basePath";
 
 const Project6 = () => {
   const [activeSection, setActiveSection] = useState("");
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
 
   const images = [
-    { url: "/projects/project-6/image1.jpg", alt: "project-6 - Image 1" },
-    { url: "/projects/project-6/image2.jpg", alt: "project-6 - Image 2" },
-    { url: "/projects/project-6/image3.jpg", alt: "project-6 - Image 3" },
-    { url: "/projects/project-6/image4.jpg", alt: "project-6 - Image 4" },
-    { url: "/projects/project-6/image5.jpg", alt: "project-6 - Image 5" },
-    { url: "/projects/project-6/image6.jpg", alt: "project-6 - Image 6" },
+    { url: BasePath + "/projects/project-6/image1.jpg", alt: "project-6 - Image 1" },
+    { url: BasePath + "/projects/project-6/image2.jpg", alt: "project-6 - Image 2" },
+    { url: BasePath + "/projects/project-6/image3.jpg", alt: "project-6 - Image 3" },
+    { url: BasePath + "/projects/project-6/image4.jpg", alt: "project-6 - Image 4" },
+    { url: BasePath + "/projects/project-6/image5.jpg", alt: "project-6 - Image 5" },
+    { url: BasePath + "/projects/project-6/image6.jpg", alt: "project-6 - Image 6" },
   ];
 
   const handlePrev = () => {

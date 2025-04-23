@@ -6,16 +6,17 @@ import Navbar from "@/app/components/navbar";
 import Footer from "@/app/components/Footer";
 import ImageModal from "@/app/components/ImageModal";
 import { useState } from "react";
+import BasePath from "@/app/components/basePath";
 
 const Project1 = () => {
   const [activeSection, setActiveSection] = useState("");
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
 
   const images = [
-    { url: "/projects/project-1/image1.jpg", alt: "Odoo Lectures - Image 1" },
-    { url: "/projects/project-1/image2.jpg", alt: "Odoo Lectures - Image 2" },
-    { url: "/projects/project-1/image3.jpg", alt: "Odoo Lectures - Image 3" },
-    { url: "/projects/project-1/image4.jpg", alt: "Odoo Lectures - Image 4" },
+    { url: BasePath + "/projects/project-1/image1.jpg", alt: "Odoo Lectures - Image 1" },
+    { url: BasePath + "/projects/project-1/image2.jpg", alt: "Odoo Lectures - Image 2" },
+    { url: BasePath + "/projects/project-1/image3.jpg", alt: "Odoo Lectures - Image 3" },
+    { url: BasePath + "/projects/project-1/image4.jpg", alt: "Odoo Lectures - Image 4" },
   ];
 
   const handlePrev = () => {

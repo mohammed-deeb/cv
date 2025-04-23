@@ -6,17 +6,18 @@ import Navbar from "@/app/components/navbar";
 import Footer from "@/app/components/Footer";
 import ImageModal from "@/app/components/ImageModal";
 import { useState } from "react";
+import BasePath from "@/app/components/basePath";
 
 const Project8 = () => {
   const [activeSection, setActiveSection] = useState("");
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
 
   const images = [
-    { url: "/projects/project-8/image1.jpg", alt: "project-8 - Image 1" },
-    { url: "/projects/project-8/image2.jpg", alt: "project-8 - Image 2" },
-    { url: "/projects/project-8/image3.jpg", alt: "project-8 - Image 3" },
-    { url: "/projects/project-8/image4.jpg", alt: "project-8 - Image 4" },
-    { url: "/projects/project-8/image5.jpg", alt: "project-8 - Image 5" },
+    { url: BasePath + "/projects/project-8/image1.jpg", alt: "project-8 - Image 1" },
+    { url: BasePath + "/projects/project-8/image2.jpg", alt: "project-8 - Image 2" },
+    { url: BasePath + "/projects/project-8/image3.jpg", alt: "project-8 - Image 3" },
+    { url: BasePath + "/projects/project-8/image4.jpg", alt: "project-8 - Image 4" },
+    { url: BasePath + "/projects/project-8/image5.jpg", alt: "project-8 - Image 5" },
   ];
 
   const handlePrev = () => {
