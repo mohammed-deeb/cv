@@ -2,9 +2,12 @@
  * @type {import('next').NextConfig}
  */
 
+const isProduction = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
-  basePath: 'https://mohammed-deeb.github.io/cv/',
   output: 'export',
+  basePath: isProduction ? '/cv' : '',
+  assetPrefix: isProduction ? '/cv' : '',
   distDir: 'out',
   images: {
     unoptimized: true,

@@ -12,10 +12,10 @@ const Project1 = () => {
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
 
   const images = [
-    { url: "./projects/project-1/image1.jpg", alt: "Odoo Lectures - Image 1" },
-    { url: "./projects/project-1/image2.jpg", alt: "Odoo Lectures - Image 2" },
-    { url: "./projects/project-1/image3.jpg", alt: "Odoo Lectures - Image 3" },
-    { url: "./projects/project-1/image4.jpg", alt: "Odoo Lectures - Image 4" },
+    { url: "/projects/project-1/image1.jpg", alt: "Odoo Lectures - Image 1" },
+    { url: "/projects/project-1/image2.jpg", alt: "Odoo Lectures - Image 2" },
+    { url: "/projects/project-1/image3.jpg", alt: "Odoo Lectures - Image 3" },
+    { url: "/projects/project-1/image4.jpg", alt: "Odoo Lectures - Image 4" },
   ];
 
   const handlePrev = () => {
