@@ -12,10 +12,10 @@ const Project2 = () => {
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
 
   const images = [
-    { url: "/projects/project-2/image1.jpg", alt: "project-2 - Image 1" },
-    { url: "/projects/project-2/image2.jpg", alt: "project-2 - Image 2" },
-    { url: "/projects/project-2/image3.jpg", alt: "project-2 - Image 3" },
-    { url: "/projects/project-2/image4.jpg", alt: "project-2 - Image 4" },
+    { url: `${process.env.NEXT_PUBLIC_BASE_PATH}/projects/project-2/image1.jpg`, alt: "project-2 - Image 1" },
+    { url: `${process.env.NEXT_PUBLIC_BASE_PATH}/projects/project-2/image2.jpg`, alt: "project-2 - Image 2" },
+    { url: `${process.env.NEXT_PUBLIC_BASE_PATH}/projects/project-2/image3.jpg`, alt: "project-2 - Image 3" },
+    { url: `${process.env.NEXT_PUBLIC_BASE_PATH}/projects/project-2/image4.jpg`, alt: "project-2 - Image 4" },
   ];
 
   const handlePrev = () => {
