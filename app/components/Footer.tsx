@@ -57,9 +57,6 @@ const Footer = () => {
                       <Link 
                         href={BasePath + "/#bio"} 
                         className="hover:text-blue-200 transition-colors"
-                        onClick={(e) => {
-                          document.getElementById('bio')?.scrollIntoView({ behavior: 'smooth' });
-                        }}
                       >
                         About Me
                       </Link>
@@ -67,10 +64,6 @@ const Footer = () => {
                     <li>
                       <Link 
                         href={BasePath + "/#projects"} 
-                        className="hover:text-blue-200 transition-colors"
-                        onClick={(e) => {
-                          document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
-                        }}
                       >
                         Projects
                       </Link>
@@ -79,9 +72,6 @@ const Footer = () => {
                       <Link 
                         href={BasePath + "/#experience"} 
                         className="hover:text-blue-200 transition-colors"
-                        onClick={(e) => {
-                          document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' });
-                        }}
                       >
                         Experience
                       </Link>
