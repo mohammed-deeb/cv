@@ -109,35 +109,14 @@ const ImageModal = ({ isOpen, onClose, imageUrl, alt, onPrev, onNext, hasPrev, h
                 src={imageUrl}
                 alt={alt}
                 fill
-                className={`object-contain cursor-pointer transition-transform duration-300 ${
+                className={`object-contain transition-transform duration-300 ${
                   isZoomed ? "scale-170" : "scale-100"
-                }`}
+                } ${isZoomed ? "cursor-zoom-out" : "cursor-zoom-in"}`}
                 onClick={() => setIsZoomed(!isZoomed)}
                 priority
               />
             </div>
-            <div className="absolute top-0 right-0">
-              <button
-                onClick={() => setIsZoomed(!isZoomed)}
-                className="text-white"
-              >
-                {isZoomed ? 
-                
-                <svg fill="#fff" width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
-<title>zoomout</title>
-<path d="M16.906 20.188l5.5 5.5-2.25 2.281-5.75-5.781c-1.406 0.781-3.031 1.219-4.719 1.219-5.344 0-9.688-4.344-9.688-9.688s4.344-9.688 9.688-9.688 9.719 4.344 9.719 9.688c0 2.5-0.969 4.781-2.5 6.469zM2.688 13.719c0 3.875 3.125 6.969 7 6.969 3.844 0 7-3.094 7-6.969s-3.156-6.969-7-6.969c-3.875 0-7 3.094-7 6.969zM4.438 12.625h10.531v2.219h-10.531v-2.219z"></path>
-</svg>
 
-                :
-                 
-                <svg fill="#fff" width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
-<title>zoomin</title>
-<path d="M16.906 20.188l5.5 5.5-2.25 2.281-5.75-5.781c-1.406 0.781-3.031 1.219-4.719 1.219-5.344 0-9.688-4.344-9.688-9.688s4.344-9.688 9.688-9.688 9.719 4.344 9.719 9.688c0 2.5-0.969 4.781-2.5 6.469zM2.688 13.719c0 3.875 3.125 6.969 7 6.969 3.844 0 7-3.094 7-6.969s-3.156-6.969-7-6.969c-3.875 0-7 3.094-7 6.969zM10.813 12.625h3.875v2.219h-3.875v3.844h-2.219v-3.844h-3.844v-2.219h3.844v-3.875h2.219v3.875z"></path>
-</svg>
-                 
-                 }
-              </button>
-            </div>
           </motion.div>
         </motion.div>
       )}
