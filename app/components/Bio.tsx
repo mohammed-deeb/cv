@@ -102,7 +102,7 @@ const Bio = () => {
                 </a>
                 <div className="flex space-x-4">
                   <a 
-                    href="https://drive.google.com/file/d/1BsLFEmkCVumghgeN_cnSfA70I4sY6ZTC/view?usp=sharing" 
+                    href="https://drive.google.com/file/d/1hm6RWwEHr8NxLylY_0pJEo9zDVYNOOLv/view?usp=sharing" 
                     download
                     className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors flex items-center"
                   >
@@ -112,7 +112,7 @@ const Bio = () => {
                     Resume (EN)
                   </a>
                   <a 
-                    href="https://drive.google.com/file/d/1X4Zo-BO-MCPH11VYDuTWdAc3-KOtU1qa/view?usp=sharing" 
+                    href="https://drive.google.com/file/d/1jCithEGEBfHGN7-0PIeBSMiUtlkjVbRy/view?usp=sharing" 
                     download
                     className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors flex items-center"
                   >
