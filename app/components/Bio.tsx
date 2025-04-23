@@ -28,7 +28,7 @@ const Bio = () => {
                   transition={{ duration: 0.3 }}
                 >
                   <Image
-                    src="/me_phd_squared_sm.png"
+                    src={`${basePath}/me_phd_squared_sm.png`}
                     alt="Profile Photo"
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-110"
