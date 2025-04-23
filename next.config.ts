@@ -4,8 +4,7 @@
 
 const isProduction = process.env.NODE_ENV === 'production';
 const nextConfig = {
-  basePath: isProduction ? '/cv' : "/",
-  assetPrefix: isProduction ? '/cv/' : "/",
+  basePath: isProduction ? '/cv' : '',
   output: 'export',
   distDir: 'out',
   images: {
