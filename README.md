@@ -1,6 +1,7 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a [Next.js](https://nextjs.org) project made by Mohammed Deeb to showcase his resume and work.
 
-## Getting Started
+## Getting Started:  
+<h3>Demo: https://mohammed-deeb.github.io/cv </h3>
 
 First, run the development server:
 
