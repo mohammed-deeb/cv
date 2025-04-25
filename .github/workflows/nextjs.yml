@@ -91,7 +91,7 @@ jobs:
             try {
               // Import Supabase client
               const { createClient } = require('@supabase/supabase-js');
-              const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL, process.env.NEXT_PUBLIC_SUPABASE_ANON_KEYSUPABASE_KEY);
+              const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL, process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY);
 
               // Ping Supabase by querying a table
               const { data, error } = await supabase.from('testing').select('*').limit(10);
