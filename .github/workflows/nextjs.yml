@@ -5,6 +5,9 @@
 name: Deploy Next.js site to Pages
 
 on:
+  schedule:
+    - cron: '*/5 * * * *' # Runs at 9:00 AM UTC every Monday and Thursday
+    
   # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
@@ -81,6 +84,33 @@ jobs:
         run: |
           echo "NEXT_PUBLIC_SUPABASE_ANON_KEY=${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}" >> $GITHUB_ENV
           echo "NEXT_PUBLIC_SUPABASE_URL=${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}" >> $GITHUB_ENV
+          - name: Okiru Supabase
+          env:
+            SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }} 
+            SUPABASE_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }} 
+          run: |
+            node -e "
+            (async () => {
+              try {
+                // Import Supabase client
+                const { createClient } = require('@supabase/supabase-js');
+                const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_KEY);
+  
+                // Ping Supabase by querying a table
+                const { data, error } = await supabase.from('testing').select('*').limit(10);
+  
+                // Handle errors
+                if (error) throw error;
+  
+                // Log success
+                console.log('Ping successful:', data);
+              } catch (err) {
+                // Log and exit with error
+                console.error('Error pinging Supabase:', err.message);
+                process.exit(1);
+              }
+            })();
+            "
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
