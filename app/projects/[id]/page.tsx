@@ -11,9 +11,9 @@ export async function generateStaticParams() {
 }
 
 // Make the component async
-export default async function ProjectPage({ params }: { params: { id: string } }) {
+export default async function ProjectPage({ params }: { params: Promise<{ id: string }> }) {
     // Await the params
-    const projectId = await Promise.resolve(params.id);
+    const { id: projectId } = await params;
     
     return <ProjectClient projectId={projectId} />;
   }
