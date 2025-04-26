@@ -5,7 +5,7 @@ import ProjectClient from '@/app/projects/ProjectClient';
 export async function generateStaticParams() {
     const { data } = await supabase.from('projectsinfo').select('id')
   
-    return data?.map(({ id }) => ({
+    return (data ?? []).map(({ id }) => ({
         id: id.toString(),
     }))
 }
