@@ -1,4 +1,5 @@
 This is a [Next.js](https://nextjs.org) project made by Mohammed Deeb to showcase his resume and work.
+This is his first ever JS web application and he used Supabase as a backend with Github CI/CD piplines and schedules to okiru the data info for availability.
 
 ## Getting Started:  
 <h3>Demo: https://mohammed-deeb.github.io/cv </h3>
