@@ -11,6 +11,7 @@ import Projects from "./components/projects";
 import Interests from "./components/Interests";
 import FutureDevelopments from "./components/FutureDevelopments";
 import Footer from "./components/Footer";
+import ChatbotButton from "./components/ChatbotButton";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState<string>("bio");
@@ -84,6 +85,9 @@ export default function Home() {
 
       {/* Footer Section */}
       <Footer />
+      
+      {/* Chatbot Button */}
+      <ChatbotButton />
     </div>
   );
 }
