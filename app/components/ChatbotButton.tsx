@@ -52,12 +52,12 @@ const ChatbotButton: React.FC = () => {
               </svg>
             </button>
           </div>
-          <div className="h-[calc(100%-4rem)]">
+          <div className="h-[calc(100%-4rem)] relative">
             <iframe
               src="https://www.chatbase.co/chatbot-iframe/cVLv3-cNDby9PCQyiFwsh"
               width="100%"
-              height="100%"
-              frameBorder="0"
+              height="106%"
+              style={{ position: 'absolute', bottom: '-40px' }}
             />
           </div>
         </div>
