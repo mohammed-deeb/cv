@@ -8,12 +8,12 @@ const Footer = () => {
         <nav className="w-full max-w-5xl px-4 py-3 mx-auto shadow-lg lg:px-8">
           <div className="container flex flex-wrap items-center justify-between mx-auto">
             <div className="w-full">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-40">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 lg:gap-20">
                 <div>
-                  <h3 className="text-xl font-semibold mb-3">Contact</h3>
-                  <ul className="space-y-2">
+                  <h3 className="text-xl font-semibold mb-4">Contact</h3>
+                  <ul className="space-y-3">
                     <li>
-                      <span className="flex">
+                      <span className="flex items-center space-x-2">
                       <a href="tel:+963934012244" className="thover:text-blue-200 transition-colors">
                         
                           <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
