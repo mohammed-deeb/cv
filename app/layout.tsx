@@ -2,21 +2,24 @@ import type { Metadata } from "next";
 import ThemeProvider from "./theme/theme-provider";
 import "./globals.css";
 
+const domainPath = "https://mohammed-deeb.github.io/cv"
+
 export const metadata: Metadata = {
   title: "MD Portfolio",
   description: "Professional resume of Mohammed Deeb. Shows my experience, and projects.",
+  icons: domainPath + "/favicon.ico",
   robots: "index, follow",
   alternates: {
-    canonical: "https://mohammed-deeb.github.io/cv/",
+    canonical: domainPath + "",
   },
   openGraph: {
     title: "MD Portfolio",
     description: "Professional resume of Mohammed Deeb. Shows my experience, and projects",
-    url: "https://mohammed-deeb.github.io/cv/",
+    url: domainPath + "",
     siteName: "Mohammed Deeb Resume",
     images: [
       {
-        url:  "https://mohammed-deeb.github.io/cv/me_phd_squared_sm.png",
+        url:  domainPath + "" + "/me_phd_squared_sm.png",
         width: 500,
         height: 394,
         alt: "MD photo preview",

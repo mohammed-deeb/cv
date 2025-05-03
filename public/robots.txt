@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://mohammed-deeb.github.io/cv/
-
-# Sitemaps
-Sitemap: https://mohammed-deeb.github.io/cv/sitemap.xml
