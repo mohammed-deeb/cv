@@ -102,7 +102,7 @@ const Bio = () => {
                 </a>
                 <div className="flex space-x-4">
                   <a 
-                    href="https://drive.google.com/file/d/1hm6RWwEHr8NxLylY_0pJEo9zDVYNOOLv/view?usp=sharing" 
+                    href="https://drive.google.com/file/d/1ososHOkIk3SGxxPGxgCfZ6Y-oNlbFPHD/view?usp=sharing" 
                     download
                     className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors flex items-center"
                   >
@@ -128,7 +128,7 @@ const Bio = () => {
           <div className="flex-1 space-y-4 text-gray-700 dark:text-[#ffffffcf]">
             <div className="text-center md:text-left">
               <h2 className="text-2xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-500 dark:from-blue-400 dark:via-purple-400 dark:to-indigo-400 bg-clip-text text-transparent">Mohammed Deeb</h2>
-              <p className="text-lg text-gray-600 dark:text-gray-300">PhD | Data Scientist | Software Engineering</p>
+              <p className="text-lg text-gray-600 dark:text-gray-300"> Kaggle Expert | Data Scientist | AI Engineer | PhD </p>
             </div>
             <p className="leading-relaxed">
               I am passionate about technology and innovation, constantly seeking to expand my knowledge in cutting-edge fields. My journey is driven by a deep curiosity for artificial intelligence, data science, and their transformative potential in our world.
