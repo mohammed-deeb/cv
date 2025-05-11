@@ -100,26 +100,38 @@ const Bio = () => {
                   </svg>
                   mohammed.deeb.phd.1990@gmail.com
                 </a>
-                <div className="flex space-x-4">
+                <div className="flex flex-col items-center space-y-2">
+                  <div className="flex space-x-4">
+                    <a 
+                      href="https://drive.google.com/file/d/1ososHOkIk3SGxxPGxgCfZ6Y-oNlbFPHD/view?usp=sharing" 
+                      download
+                      className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors flex items-center"
+                    >
+                      <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                      </svg>
+                      Resume (EN)
+                    </a>
+                    <a 
+                      href="https://drive.google.com/file/d/1jCithEGEBfHGN7-0PIeBSMiUtlkjVbRy/view?usp=sharing" 
+                      download
+                      className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors flex items-center"
+                    >
+                      <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                      </svg>
+                      السيرة الذاتية
+                    </a>
+                  </div>
                   <a 
-                    href="https://drive.google.com/file/d/1ososHOkIk3SGxxPGxgCfZ6Y-oNlbFPHD/view?usp=sharing" 
+                    href="https://drive.google.com/file/d/1JaRNj-6yHYIsI9yFm8XXXELyDKcovOPP/view?usp=sharing" 
                     download
                     className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors flex items-center"
                   >
                     <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
-                    Resume (EN)
-                  </a>
-                  <a 
-                    href="https://drive.google.com/file/d/1jCithEGEBfHGN7-0PIeBSMiUtlkjVbRy/view?usp=sharing" 
-                    download
-                    className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors flex items-center"
-                  >
-                    <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                    </svg>
-                    السيرة الذاتية
+                    Resume (ATS Friendly)
                   </a>
                 </div>
               </div>
