@@ -124,7 +124,7 @@ const Bio = () => {
                     </a>
                   </div>
                   <a 
-                    href="https://drive.google.com/file/d/1JaRNj-6yHYIsI9yFm8XXXELyDKcovOPP/view?usp=sharing" 
+                    href="https://drive.google.com/file/d/1eLmOSpSWhwhsOprvD4yldTh_SGIwheex/view?usp=sharing" 
                     download
                     className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors flex items-center"
                   >
