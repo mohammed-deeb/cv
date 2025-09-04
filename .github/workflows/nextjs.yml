@@ -5,8 +5,8 @@
 name: Deploy Next.js site to Pages
 
 on:
-  schedule:
-    - cron: '0 9 * * 1,4' # Runs at 9:00 AM UTC every Monday and Thursday
+  # schedule:
+  #  - cron: '0 9 * * 1,4' # Runs at 9:00 AM UTC every Monday and Thursday
     
   # Runs on pushes targeting the default branch
   push:
