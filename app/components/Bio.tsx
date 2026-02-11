@@ -56,7 +56,7 @@ const Bio = () => {
               />
             </motion.div>
             <p className="text-center text-base text-gray-600 dark:text-gray-300">
-              M. Deeb is <span className="text-green-500 dark:text-green-400">available</span> for hire
+              M. Deeb is <span className="text-green-500 dark:text-green-400">available</span> to be hired
             </p>
             <div className="flex flex-col items-center gap-4 mt-4">
               <div className="flex space-x-4">
