@@ -164,7 +164,7 @@ const Bio = () => {
                 <div className="flex flex-col items-center space-y-2">
                   <div className="flex space-x-4">
                     <a
-                      href="https://drive.google.com/file/d/1ososHOkIk3SGxxPGxgCfZ6Y-oNlbFPHD/view?usp=sharing"
+                      href="https://drive.google.com/file/d/1MkplFDSBAcDqCTIAp2etvWYILbmNQguI/view?usp=sharing"
                       download
                       className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors flex items-center"
                     >
@@ -184,7 +184,7 @@ const Bio = () => {
                       Resume (EN)
                     </a>
                     <a
-                      href="https://drive.google.com/file/d/1jCithEGEBfHGN7-0PIeBSMiUtlkjVbRy/view?usp=sharing"
+                      href="https://drive.google.com/file/d/1km_lK3C6DcIcVqIgOYCo3vF-ezsAeNGt/view?usp=sharing"
                       download
                       className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors flex items-center"
                     >
@@ -205,7 +205,7 @@ const Bio = () => {
                     </a>
                   </div>
                   <a
-                    href="https://drive.google.com/file/d/1eLmOSpSWhwhsOprvD4yldTh_SGIwheex/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1dSWKCRcdfAJZYh3fZ59zawvNo5UN7el_/view?usp=sharing"
                     download
                     className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors flex items-center"
                   >
@@ -231,7 +231,7 @@ const Bio = () => {
           <div className="flex-1 space-y-4 text-gray-700 dark:text-[#ffffffcf]">
             <div className="text-center md:text-left">
               <h2 className="text-2xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-500 dark:from-blue-400 dark:via-purple-400 dark:to-indigo-400 bg-clip-text text-transparent">
-                Mohammed Deeb
+                Mohammed Deeb, PhD
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300">
                 {" "}
@@ -301,6 +301,9 @@ const Bio = () => {
                 </span>
                 <span className="inline-flex items-center px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium border border-blue-100 dark:border-blue-800">
                   Java
+                </span>
+                <span className="inline-flex items-center px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium border border-blue-100 dark:border-blue-800">
+                  Bioinformatics
                 </span>
               </div>
             </div>
