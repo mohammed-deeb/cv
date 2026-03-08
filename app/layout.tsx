@@ -2,24 +2,26 @@ import type { Metadata } from "next";
 import ThemeProvider from "./theme/theme-provider";
 import "./globals.css";
 
-const domainPath = "https://mohammed-deeb.github.io/cv"
+const domainPath = "https://mohammed-deeb.github.io/cv";
 
 export const metadata: Metadata = {
-  title: "MD Portfolio",
-  description: "Professional resume of Mohammed Deeb. Shows my experience, and projects.",
+  title: "Mohammed Deeb Resume",
+  description:
+    "Professional resume of Mohammed Deeb. Shows his experience, and projects.",
   icons: domainPath + "/favicon.ico",
   robots: "index, follow",
   alternates: {
     canonical: domainPath + "",
   },
   openGraph: {
-    title: "MD Portfolio",
-    description: "Professional resume of Mohammed Deeb. Shows my experience, and projects",
+    title: "Mohammed Deeb Resume",
+    description:
+      "Professional resume of Mohammed Deeb. Shows his experience, and projects",
     url: domainPath + "",
     siteName: "Mohammed Deeb Resume",
     images: [
       {
-        url:  domainPath + "" + "/me_phd_squared_sm.png",
+        url: domainPath + "" + "/me_phd_squared_sm.png",
         width: 500,
         height: 394,
         alt: "MD photo preview",
@@ -27,7 +29,7 @@ export const metadata: Metadata = {
     ],
     locale: "en_US",
     type: "website",
-  }
+  },
 };
 
 export default function RootLayout({
